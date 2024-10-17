@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form action="" method="post">
+     <h1 style="text-align: center;">CV Data Entry Form</h1>
+     <fieldset>
+          <legend><b>Personal Information</b></legend>
+          <label for="name">Full Name: </label>
+          <input id="name" name="Full_Name" type="text"><br><br>
+          <label for="email">Email: </label>
+          <input id="email" name="Email" type="email"><br><br>
+          <label for="location">Location: </label>
+          <input id="location" name="Location" type="text"><br><br>
+          <label for="picture">Upload Profile Picture</label>
+          <input id="picture" name="picture" type="file">
+        </fieldset><br>
+        <fieldset>
+          <legend><b>Intorduction</b></legend>
+          <label for="intorduction">Write a short introduction about yourself.</label><br>
+          <textarea rows="5" cols="50" name="introduction" id="intorduction">
+         </textarea>
+        </fieldset><br>
+        <fieldset>
+         <legend><b>Skills</b></legend>
+          <label for="skills">Select your skills: </label><br>
+         <input id="skills" name="skills" type="checkbox" value="html">HTML<br>
+         <input id="skills" name="skills" type="checkbox" value="css">CSS<br>
+         <input id="skills" name="skills" type="checkbox" value="js">Javascript<br>
+          <input id="skills" name="skills" type="checkbox" value="react">React<br>
+         <input id="skills" name="skills" type="checkbox" value="node.js">Node.js<br>
+         <input id="skills" name="skills" type="checkbox" value="express">Express<br>
+         <input id="skills" name="skills" type="checkbox" value="git">Git<br>
+         <input id="skills" name="skills" type="checkbox" value="WPO">Web Performance Optimization<br>
+        </fieldset><br>
+        <fieldset>
+        <legend><b>Experience</b></legend>
+         <label for="position">Current Position: </label>
+         <input id="position" name="position" type="text"><br><br>
+         <label for="experience">Describe your experience:</label><br>
+          <textarea id="experience" name="experience" rows="4" cols="50">
+          </textarea>
+    </fieldset><br>
+  <fieldset>
+      <legend><b>Education And Certifications</b></legend>
+      <label for="degree">Degree: </label>
+      <select id="degree" name="degree">
+       <option value="High School" selected>High School</option>
+       <option value="Bachelor">Bachelor</option>
+     <option value="Master">Master</option>
+     <option value="PhD">PhD</option>
+      </select><br><br>
+  <label for="Certifications">Certifications:</label><br>
+  <textarea name="Certifications" id="Certifications" rows="5" cols="50">
+   </textarea>
+     </fieldset><br>
+    <fieldset>
+  <legend><b>Personal Projects</b></legend>
+  <label for="Projects">Describe your personal projects:</label><br>
+  <textarea id="Projects" name="project" rows="5" cols="50">
+   </textarea>
+ </fieldset><br>
+ <input type="submit" name="submit">
+ </form>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+ <h7 style="color: red;">IT Center Ticket Submission Form</h7>
+
+ 
+    
+     <label for="problem-type">Type of Problem:</label>
+     <select id="problem-type" name="problem-type" required>
+         <option value="CV Creator Tool">CV Creator Tool</option>
+         <option value="Data Privacy Concerns">Data Privacy Concerns</option>
+         <option value="Help & Guidance" selected>Help & Guidance</option>
+         <option value="File upload issues">File upload issues</option>
+     </select>
+     <br><br>
+   
+     <label>Urgency Level:</label><br>
+     <input type="radio" id="not-urgent" name="urgency" value="Not urgent">
+     <label for="not-urgent">Not urgent</label><br>
+
+     <input type="radio" id="mild" name="urgency" value="Mild" checked>
+     <label for="mild">Mild</label><br>
+
+     <input type="radio" id="highly-urgent" name="urgency" value="Highly Urgent">
+     <label for="highly-urgent">Highly Urgent</label><br><br>
+   
+     <label for="file-upload">Upload a file (JPG, JPEG, PNG):</label>
+     <input type="file" id="file-upload" name="file-upload" accept=".jpg, .jpeg, .png" required>
+     <br><br>
+     <form action="/submit-ticket" method="post" enctype="multipart/form-data">
+     <input type="submit" value="Submit Ticket">
+ </form>
+ <!DOCTYPE html>
+<html>
+<body>
+    <form action="" method="post">
+        <h2 style="text-align: center;">Subscription Management Form</h2>
+        <hr style="width:50%;text-align:left;margin-left:0">
+        <fieldset>
+            <legend>Details</legend>
+            <label for="email"><u><b>Email:</b></u></label>
+            <input id="email" name="email" type="text"><br><br>
+            <label for="link"><u><b>Link:</b></u></label>
+            <input id="link" name="link" type="text"><br><br>
+            <label for="password"><u><b>Passwor:</b></u></label>
+            <input id="password" name="password" type="text"><br><br>
+        </fieldset><br><br>
+        <fieldset>
+            <legend>Reasons for Ending Subscription</legend>
+            <label for="reason"><b>Select Reason: </b></label>
+            <select id="reason" name="reason">
+                <option value="Other" selected>Other</option>
+                <option value="Quality">Bad Quality</option>
+                <option value="Size">Small Size</option>
+            </select><br><br>
+            <label for="tool"><i>Would you like to use one of our other tools again?</i></label><br><br>
+            <input id="tool" name="yes" type="radio" checked>Yes<br>
+            <input id="tool" name="no" type="radio">No<br>
+            <input id="tool" name="maybe" type="radio">Maybe<br><br>
+        </fieldset><br><br>
+        <label for="Information">Additional Comments:your comments</label><br>
+        <textarea id="Information" name="Information" rows="5" cols="50" placeholder="your comments..." required></textarea><br><br>
+        <input type="submit" name="submit">
+    </form>
+</body>
+</html>
